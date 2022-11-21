@@ -8,7 +8,7 @@
   
   body {
       margin: 0;
-      background: #222;
+      background: rgb(255, 255, 255);
       font-family: 'Work Sans', sans-serif;
       font-weight: 400;
   }
@@ -28,8 +28,7 @@
     width: 100%;
   }
   
-  /* changed this from the tutorial video to
-     allow it to gain focus, making it tabbable */
+
   .nav-toggle {
     position: absolute !important;
     top: -9999px !important;
@@ -108,7 +107,7 @@
   }
   
   nav a:hover {
-    color: #000;
+    color: #BF1304;
   }
   
   .nav-toggle:checked ~ nav {
@@ -171,7 +170,7 @@
       content: '';
       display: block;
       height: 5px;
-      background: black;
+      background: #A9BF04;
       position: absolute;
       top: -.75em;
       left: 0;
@@ -268,8 +267,13 @@ nav a.selected {
 }
 
 .page4 {
-	background: #7588d4;	
+	background-image: url(images/aboutusbkgrnddesktop.jpg);
+  background-repeat: no-repeat;	
+  background-size: 100%;
+  background-position: center;
+  background-size: cover;
 }
+
 
 .item {
 	position: absolute;
@@ -349,4 +353,57 @@ nav a.selected {
 	background: #ccc;
 	padding: 20px;
 	line-height: 1.4em;
+}
+
+.container{
+  width: 100%;
+  max-width: 700px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 0 5vh;
+}
+
+
+/* accordion-2 */
+#accordion-2{
+  position: relative;
+  box-shadow: 0 1px 7px #DBDBDB;
+}
+
+#accordion-2 .head{
+  background-color: #FFFFFF;
+  color: #563e6e;
+  padding: 20px 30px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+#accordion-2 .arrow{
+  content:'';
+  position: absolute;
+  right: 0;
+  right: 30px;
+  top: 65px;
+  opacity: 1;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-top: 40px solid #FFFFFF;
+  transition: 0.3s ease;
+  z-index: 2;
+}
+
+#accordion-2 .head:hover .arrow, #accordion-2 .arrow-animate{
+  border-top: 40px solid #FFE77AFF;
+  transform: translateY(40px);
+}
+
+#accordion-2 .content{
+  background-color: #FFFFFF;
+  display: none;
+  padding: 30px;
+  color: #333333;
+}
+
+#accordion-2 .head:hover, #accordion-2 .active{
+  background-color: #FFE77AFF; 
 }
