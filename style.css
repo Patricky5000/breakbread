@@ -355,7 +355,7 @@ nav a.selected {
 }
 
 .container{
-  width: 100%;
+  width: 50%;
   max-width: 700px;
   min-width: 300px;
   margin: 0 auto;
