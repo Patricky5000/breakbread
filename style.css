@@ -118,12 +118,7 @@
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms;
   }
-  
-  @media screen and (min-width: 800px) {
-    .nav-toggle-label {
-      display: none;
-    }
-  
+
     header {
       display: grid;
       grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
@@ -134,7 +129,7 @@
     }
     
     nav {
-      // all: unset; /* this causes issues with Edge, since it's unsupported */
+      /* all: unset; /* this causes issues with Edge, since it's unsupported */
       
       /* the following lines are not from my video, but add Edge support */
       position: relative;
@@ -182,7 +177,7 @@
     nav a:hover::before {
       transform: scale(1,1);
     }
-  }
+  
   
 
 
@@ -405,4 +400,9 @@ nav a.selected {
 
 #accordion-2 .head:hover, #accordion-2 .active{
   background-color: #FFE77AFF; 
+}
+@media screen and (min-width: 800px){
+  .nav-toggle-label {
+    display: none;
+  }
 }
