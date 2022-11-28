@@ -38,7 +38,7 @@
   }
   
   .nav-toggle:focus ~ .nav-toggle-label {
-    outline: 3px solid rgba(lightblue, .75);
+    outline: 3px solid rgba(rgb(43, 208, 103), .75);
   }
   
   .nav-toggle-label {
@@ -55,7 +55,7 @@
   .nav-toggle-label span::before,
   .nav-toggle-label span::after {
     display: block;
-    background: white;
+    background: rgb(142, 37, 37);
     height: 2px;
     width: 2em;
     border-radius: 2px;
@@ -81,7 +81,6 @@
     text-align: left;
     top: 100%;
     left: 0;
- 
     width: 100%;
     transform: scale(1, 0);
     transform-origin: top;
@@ -123,11 +122,12 @@
 
     header {
       display: grid;
-      grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+      grid-template-columns: 1fr auto minmax(300px, 3fr) 1fr;
     }
     
     .logo {
-      grid-column: 2 / 3;
+      margin-left: 30px;
+      grid-column: 1 / 4;
     }
     
     nav {
@@ -231,7 +231,7 @@ nav {
 
 nav a {
 	font-size: 22px;
-	color: #414141;
+	color: #282727;
 	display: block;
 	text-decoration: none;
 	margin: 5px 0;
@@ -291,24 +291,18 @@ nav a.selected {
 }
 
 .item1 {
-	top: 55%;
-	left: 70%;
-	
-	
-}
+	top: 90%;
+	left: 15%;
+	}
 
 .item2 {
-	top: 45%;
+	top: 30%;
 	left: 10%;
-	
-
 }
 
 .item3 {
-	top: 40%;
+	top: 30%;
 	left: 60%;
-  
-	
 }
 
 .item4 {
@@ -320,7 +314,7 @@ nav a.selected {
 
 .item5 {
 	top: 50%;
-	left: 50%;
+	left: 35%;
 	
 	
 }
@@ -342,11 +336,11 @@ nav a.selected {
 
 .container{
   width: 50%;
-  max-width: 900px;
-  min-width: 300px;
-  margin-top: 130px;
-  margin-left: 50px;
-  padding: 0 5vh;
+  max-width: 1000px;
+  min-width: 375px;
+  margin-top: 75px;
+  margin-left: 30px;
+ 
 }
 
 
@@ -393,48 +387,17 @@ nav a.selected {
 #accordion-2 .head:hover, #accordion-2 .active{
   background-color: #7AC943; 
 }
-
-@import "compass/css3";
-@mixin transition($transition...) {
-    -moz-transition:    $transition;
-    -ms-transition:      $transition;
-    -webkit-transition: $transition;
-    transition:         $transition;
+footer {
+  padding: 40px;
+  background: #7AC943;
+  display: flex;
+  justify-content: space-between;
+}
+footer .right {
+  text-align: right;
 }
 
-$bg1: "images/1sandwich.png";
-$bg2: "https://dl.dropbox.com/s/kioimintl0v9l4d/pic.jpg";
-$bg3: "https://dl.dropbox.com/s/7a60gndncwf81x8/pic.jpg";
-$bg4: "https://dl.dropbox.com/s/nkwuv9jz8i99309/pic.jpg";
 
-ul {
-  list-style: none;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-  li {
-    float: left; 
-    width: 16.666%; 
-    height: 600px;
-    opacity: 0.4;
-    @include transition(all .5s ease-in-out);
-  }
-    
-    &:hover,
-    &:first-child ~ li:last-child {
-      width: 50%;
-      opacity: 1;
-      @include transition(all .5s ease-in-out);
-    }
-    
-    &:hover ~ li:last-child {
-      width: 16.666%;
-      opacity: 0.4;
-    }
-    
-    &:nth-child(1) {
-      background: url($bg1) top center no-repeat;
-    }
 @media screen and (min-width: 800px){
   .nav-toggle-label {
     display: none;
