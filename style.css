@@ -10,7 +10,7 @@
       margin: 0;
       background: rgb(255, 255, 255);
       font-family: forma-djr-micro, sans-serif;
-      font-weight: 300;
+      font-weight: 400;
       font-style: normal;
 
   }
@@ -24,7 +24,7 @@
   
   header {
     background: var(--background);
-    
+    padding: 20px;
     position: fixed;
     z-index: 999;
     width: 100%;
@@ -103,19 +103,19 @@
 
 .menu-mobile {
   background-color: #efefef;
-  height: 100vh;
+  height: 50vh;
   position: fixed;
-  width: 100%;
+  width: 50%;
   z-index: 999;
   padding-top: 150px;
-  font-family: "Helvetica", sans-serif;
+  font-family: forma-djr-micro, sans-serif;
   text-align: center;
 }
 
 .menu-mobile,
-.menu-mobile a {
+.menu-mobile  {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
 }
 .menu-mobile a {
@@ -180,7 +180,7 @@
       display:none;
   }
   /* END of desktop menu for 768 media query */
-}
+
 
 
   
@@ -402,8 +402,3 @@ footer .right {
 
 
 @media only screen and (min-width: 768px) {
-@media screen and (min-width: 800px){
-  .nav-toggle-label {
-    display: none;
-  }
-}
