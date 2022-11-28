@@ -10,7 +10,7 @@
       margin: 0;
       background: rgb(255, 255, 255);
       font-family: forma-djr-micro, sans-serif;
-      font-weight: 400;
+      font-weight: 300;
       font-style: normal;
 
   }
@@ -29,11 +29,7 @@
     z-index: 999;
     width: 100%;
   }
-  h4 {
-    font-family: brush-atf, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
+  
 
   .nav-toggle {
     position: absolute !important;
@@ -206,18 +202,22 @@ html, body {
     height: 100%;
 }
 
+h1{
+  fontsize: 36px;
+}
 h2 {
 	font-size: 20px;
 	text-transform: uppercase;
 	color: #333;
 }
-h1{
-  fontsize: 36px;
-}
 h3 {
   font-weight: 800;
-  
+  }
 
+  h4 {
+    font-family: brush-atf, sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 nav {
@@ -319,22 +319,25 @@ nav a.selected {
 }
 
 .item5 {
-	top: 60%;
-	left: 90%;
+	top: 50%;
+	left: 50%;
 	
 	
 }
 
 .slowshow {
+  border: 5px solid rgb(255, 255, 255);
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	width: 300px;
 	margin-top: -160px;
 	margin-left: -170px;
-	background: #ccc;
+  color: #ffffff;
+	background: #FF1D25;
 	padding: 20px;
 	line-height: 1.4em;
+  border-radius: 10px;
 }
 
 .container{
@@ -390,6 +393,48 @@ nav a.selected {
 #accordion-2 .head:hover, #accordion-2 .active{
   background-color: #7AC943; 
 }
+
+@import "compass/css3";
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -ms-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+$bg1: "images/1sandwich.png";
+$bg2: "https://dl.dropbox.com/s/kioimintl0v9l4d/pic.jpg";
+$bg3: "https://dl.dropbox.com/s/7a60gndncwf81x8/pic.jpg";
+$bg4: "https://dl.dropbox.com/s/nkwuv9jz8i99309/pic.jpg";
+
+ul {
+  list-style: none;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+  li {
+    float: left; 
+    width: 16.666%; 
+    height: 600px;
+    opacity: 0.4;
+    @include transition(all .5s ease-in-out);
+  }
+    
+    &:hover,
+    &:first-child ~ li:last-child {
+      width: 50%;
+      opacity: 1;
+      @include transition(all .5s ease-in-out);
+    }
+    
+    &:hover ~ li:last-child {
+      width: 16.666%;
+      opacity: 0.4;
+    }
+    
+    &:nth-child(1) {
+      background: url($bg1) top center no-repeat;
+    }
 @media screen and (min-width: 800px){
   .nav-toggle-label {
     display: none;
