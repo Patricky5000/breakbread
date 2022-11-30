@@ -24,7 +24,7 @@
   
   header {
     background: var(--background);
-    padding: 20px;
+    padding: 15px;
     position: fixed;
     z-index: 999;
     width: 100%;
@@ -43,7 +43,7 @@
 .icon {
   position: fixed;
   cursor: pointer;
-  top: 20px;
+  top: 75px;
   right: -5px;
   width: 40px;
   height: 45px;
@@ -56,7 +56,7 @@
   width: 40px;
   height: 4px;
   line-height: 70px;
-  background: #666;
+  background: #BF1304;
   border-radius: 5px;
   position: absolute;
   top: 50%;
@@ -72,7 +72,7 @@
   position: absolute;
   width: 40px;
   height: 4px;
-  background: #666;
+  background: #BF1304;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
@@ -102,8 +102,8 @@
 }
 
 .menu-mobile {
-  background-color: #7AC943;
-  height: 50vh;
+  background-color: #A9BF04;
+  height: 60vh;
   position: fixed;
   width: 100%;
   z-index: 999;
@@ -121,12 +121,12 @@
 .menu-mobile a {
   clear: right;
   text-decoration: none;
-  color: #F2B05E;
+  color: #BF1304;
   height: 70px;
   line-height: 70px;
 }
 .menu-mobile a:hover {
-  color: red;
+  color: #BF1304;
 }
 
 .desktop,
@@ -162,7 +162,7 @@
     justify-content: space-evenly;
   }
   .menu-desktop a:hover {
-    color: #FF1D25;
+    color: #BF1304;
   }
 
   .desktop {
@@ -273,8 +273,11 @@ nav a.selected {
 }
 
 .page3 {
-	background: #A9BF04;	
-	background-size: 100%;
+	background-image: url(images/location_1desktop.jpg);
+  background-repeat: no-repeat;	
+  background-size: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 .page4 {
@@ -292,12 +295,12 @@ nav a.selected {
 }
 
 .item1 {
-	top: 100vh;
-	left: 15%;
+	bottom: 10vh;
+	left: 10.5%;
 	}
 
 .item2 {
-	top: 30%;
+	top: 25%;
 	left: 10%;
 }
 
@@ -329,7 +332,7 @@ nav a.selected {
 	margin-top: -160px;
 	margin-left: -170px;
   color: #ffffff;
-	background: #FF1D25;
+	background: #BF1304;
 	padding: 20px;
 	line-height: 1.4em;
   border-radius: 10px;
@@ -339,7 +342,7 @@ nav a.selected {
   width: 50%;
   max-width: 1000px;
   min-width: 375px;
-  margin-top: 90px;
+  margin-top: 78px;
   margin-left: 30px;
  
 }
@@ -374,7 +377,7 @@ nav a.selected {
 }
 
 #accordion-2 .head:hover .arrow, #accordion-2 .arrow-animate{
-  border-top: 50px solid #7AC943;
+  border-top: 50px solid #A9BF04;
   transform: translateY(10px);
 }
 
@@ -386,7 +389,7 @@ nav a.selected {
 }
 
 #accordion-2 .head:hover, #accordion-2 .active{
-  background-color: #7AC943; 
+  background-color: #A9BF04; 
 }
 
 .order:hover {
@@ -410,7 +413,7 @@ nav a.selected {
 
 footer {
   padding: 40px;
-  background: #7AC943;
+  background: #A9BF04;
   display: flex;
   justify-content: space-between;
 }
