@@ -102,14 +102,14 @@
 }
 
 .menu-mobile {
-  background-color: #efefef;
+  background-color: #7AC943;
   height: 50vh;
   position: fixed;
-  width: 50%;
+  width: 100%;
   z-index: 999;
   padding-top: 150px;
   font-family: forma-djr-micro, sans-serif;
-  text-align: center;
+  text-align: right;
 }
 
 .menu-mobile,
@@ -121,7 +121,7 @@
 .menu-mobile a {
   clear: right;
   text-decoration: none;
-  color: #333;
+  color: #F2B05E;
   height: 70px;
   line-height: 70px;
 }
@@ -162,7 +162,7 @@
     justify-content: space-evenly;
   }
   .menu-desktop a:hover {
-    color: red;
+    color: #FF1D25;
   }
 
   .desktop {
