@@ -39,7 +39,9 @@
   width: 100%;
   z-index: 900;
 }
-
+.logo{
+  margin-left: 5vw;
+}
 .icon {
   position: fixed;
   cursor: pointer;
@@ -295,8 +297,8 @@ nav a.selected {
 }
 
 .item1 {
-	top: 80%;
-	right: 10%;
+	top: 90%;
+	right: 5%;
 	}
 
 .item2 {
@@ -323,19 +325,17 @@ nav a.selected {
 	
 }
 .about{
-  border: 5px solid rgb(255, 255, 255);
+  border: 7px solid rgb(255, 255, 255);
   color:#F2F2F2;
   background-color: #BF1304;
   padding: 20px;
   line-height: 1.4em;
-  left:20px
-  position: center;
-  width: 65%
-  
-  
-  
-
-}
+  border-radius: 25px;
+  width: 50%;
+  max-width: 1000px;
+  min-width: 375px;
+ 
+  }
 
 .container{
   width: 50%;
