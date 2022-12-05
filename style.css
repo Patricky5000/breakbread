@@ -307,20 +307,19 @@ nav a.selected {
 }
 
 .item3 {
-	top: 30%;
-	left: 55%;
+	top: 75%;
+	right: 5%;
 }
 
 .item4 {
-	top: 30%;
-	left: 10%;
+	top: 75%;
 	
-	
-}
+  right: 7%;
+	}
 
 .item5 {
 	top: 50%;
-	left: 35%;
+	right: 50%;
 	
 	
 }
@@ -331,7 +330,7 @@ nav a.selected {
   padding: 20px;
   line-height: 1.4em;
   border-radius: 25px;
-  width: 50%;
+  margin-left: 30px;
   max-width: 1000px;
   min-width: 375px;
  
