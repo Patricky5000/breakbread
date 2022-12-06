@@ -210,6 +210,7 @@ html, body {
 h1{
   fontsize: 36px;
 }
+
 h2 {
 	font-size: 20px;
 	text-transform: uppercase;
@@ -324,12 +325,12 @@ nav a.selected {
 }
 
 .item6 {
-	top: 650px;
+	top: 60%;
 	right: 10%;
 }
 
 .item7 {
-	top: 60%;
+	top: 75%;
 	right: 10%;
 }
 
@@ -339,7 +340,7 @@ nav a.selected {
 }
 
 .item9 {
-	top: 125px;
+	top: 155px;
 	right: 5%;
 }
 .item10 {
@@ -436,6 +437,7 @@ nav a.selected {
 
 footer {
   padding: 40px;
+  color:#F2F2F2;
   background: #A9BF04;
   display: flex;
   justify-content: space-between;
