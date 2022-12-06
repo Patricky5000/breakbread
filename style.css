@@ -213,8 +213,9 @@ h1{
 h2 {
 	font-size: 20px;
 	text-transform: uppercase;
-	color: #fffff;
+	color: #ffffff;
 }
+
 h3 {
   font-weight: 800;
   }
@@ -297,7 +298,7 @@ nav a.selected {
 }
 
 .item1 {
-	top: 90%;
+	bottom: 65%;
 	right: 5%;
 	}
 
@@ -307,22 +308,45 @@ nav a.selected {
 }
 
 .item3 {
-	top: 75%;
+	top: 45%;
 	right: 5%;
 }
 
 .item4 {
-	top: 75%;
+	top: 65%;
 	
   right: 7%;
 	}
 
 .item5 {
 	top: 50%;
-	right: 50%;
-	
-	
+	right: 20%;
 }
+
+.item6 {
+	top: 650px;
+	right: 10%;
+}
+
+.item7 {
+	top: 60%;
+	right: 10%;
+}
+
+.item8 {
+	bottom: 20%;
+	right: 10%;
+}
+
+.item9 {
+	top: 125px;
+	right: 5%;
+}
+.item10 {
+	bottom: 15%;
+	left: 10%;
+}
+
 .about{
   border: 7px solid rgb(255, 255, 255);
   color:#F2F2F2;
@@ -330,6 +354,7 @@ nav a.selected {
   padding: 20px;
   line-height: 1.4em;
   border-radius: 25px;
+  margin-top:30px ;
   margin-left: 30px;
   max-width: 1000px;
   min-width: 375px;
